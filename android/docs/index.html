@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Androidアプリ開発のセットアップその1</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id='img_title' src="images/img_title.png" alt="Androidのロゴ">
+    <div class="title">
+        <img id='img_droid' src="images/img_droid_default.png" alt="droidの画像">
+        <h1>Androidアプリ開発</h1>    
+    </div>
+    <p class="Introduction"><strong>Androidアプリ</strong>の開発手順を1から紹介します！</p>
+
+    <h2>Androidアプリ開発に必要なもの</h2>
+    <p>ハードウェア</p>
+    <ul>
+        <li>開発用のPC(Windows, Mac, Linux, ChromeOS)</li>
+        <li>テスト用の実機(無くてもOK)</li>
+    </ul>
+
+    <p>ソフトウェア</p>
+    <ul>
+        <li>Android Studio</li>
+        <li>SDK</li>
+        <li>テスト用のエミュレータ</li>
+    </ul>
+
+
+    <h2>Android Studioのインストール手順</h2>
+    <p>最初に<a href="https://developer.android.com/studio?hl=ja">Android Studioの最新バージョンをインストール</a>してください</p>
+    <h3>Windows</h3>
+    <p>Windows に Android Studio をインストールする手順は次のとおりです。</p>
+    <ol>
+        <li>.exe ファイルをダウンロードした場合は（推奨）、ダブルクリックして起動します。<br>.zip ファイ ルをダウンロードした場合は、ZIP を解凍し、android-studio フォルダを Program Files フ ォルダにコピーします。さらに、android-studio > bin フォルダを開いて、studio64.exe（64 ビットマシンの場合）または studio.exe（32 ビットマシンの場合）を起動します。</li>
+        <li>Android Studio のセットアップ ウィザードに沿って操作し、推奨されている SDK パッケージをインストールします。</li>
+    </ol>
+
+    <h3>Mac</h3>
+    <p>Mac に Android Studio をインストールする手順は次のとおりです。</p>
+    <ol>
+        <li>Android Studio DMG ファイルを起動します。</li>
+        <li>アプリケーション フォルダに Android Studio をドラッグ＆ドロップしてから、Android Studio を起動します。</li>
+        <li>Android Studio の以前の設定をインポートするかどうかを選択して、[OK] をクリックします。</li>
+        <li>Android Studio セットアップ ウィザードの指示に沿ってセットアップの残りの手順を行います。開発に必要な Android SDK コンポーネントのダウンロードも含まれています。</li>
+    </ol>
+
+    <h3>Linux</h3>
+    <p>Linux に Android Studio をインストールする手順は次のとおりです。</p>
+    <ol>
+        <li>ダウンロードした .zip ファイルを、利用方法に応じて適切な場所に解凍します。<br>たとえば、自身のユーザー プロファイル用であれば /usr/local/、共有ユーザー用であれば /opt/ に解凍します。 64 ビット版の Linux を使用している場合は、必ず最初に 64 ビットマシンに必要なライブラリをインストールしてください。</li>
+        <li>Android Studio を起動するにはターミナルを開き、android-studio/bin/ ディレクトリに移動して studio.sh を実行します。</li>
+        <li>Android Studio の以前の設定をインポートするかどうかを選択して、[OK] をクリックします。</li>
+        <li>Android Studio セットアップ ウィザードの指示に沿ってセットアップの残りの手順を行います。開発に必要な Android SDK コンポーネントのダウンロードも含まれています。</li>
+    </ol>
+
+    <h4>64 ビットマシンに必要なライブラリ</h4>
+    <p>64 ビット版の Ubuntu を実行している場合は、次のコマンドで 32 ビット用のライブラリをいくつかインストールする必要があります。</p>
+    <p>$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386</p>
+    <p>64 ビット版の Fedora を実行している場合は、次のコマンドを使用します。</p>
+    <p>$ sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686</p>
+
+    <h3>ChromeOS</h3>
+    <p>Chrome OS に Android Studio をインストールする手順は次のとおりです。</p>
+    <ol>
+        <li>まだ行っていない場合は、<a href="https://support.google.com/chromebook/answer/9145439?hl=ja">Chrome OS 用の Linux をインストール</a>します。</li>
+        <li>ファイルアプリを開き、[マイファイル] の [ダウンロード] フォルダにダウンロードした DEB パッケージを見つけます。</li>
+        <li>DEB パッケージを右クリックし、[Linux（ベータ版）でのインストール] を選択します</li>
+        <li>Android Studio セットアップ ウィザードの指示に沿ってセットアップの残りの手順を行います。開発に必要な Android SDK コンポーネントのダウンロードも含まれています。</li>
+        <li>インストールが完了したら、ランチャーから Android Studio を起動します。または、Chrome OS Linux ターミナルから、デフォルトのインストール ディレクトリにある studio.sh を実行して Android Studio を起動します。
+        </li>
+    </ol>
+
+    <div class="name">
+        <p id="text_user">ユーザー</p>
+        <button id="button_user">ユーザを変更</button>
+    </div>
+
+    <h2>参考</h2>
+    <a href="https://developer.android.com/studio/install?hl=ja">Android Studioインストール</a>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

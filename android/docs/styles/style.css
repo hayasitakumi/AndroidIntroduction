@@ -1,0 +1,56 @@
+html {
+    /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-size: 10px;
+    /* this should be the rest of the output you got from Google fonts */
+    font-family: 'Roboto', sans-serif;
+    background-color: #D1F1CC;
+}
+
+.title img, h1{
+    display:inline-block;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    /*top/right/bottom/left*/
+    padding: 0 20px 20px 20px;
+    border: 3px solid #E3E3E3;
+}
+
+#img_title {
+    display: block;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #5EC84E;
+    text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p, a, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.name p, button{
+    display:inline-block;
+}
